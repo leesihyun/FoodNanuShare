@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "list_category">
+        <item>전체</item>
+        <item>과일/채소</item>
+        <item>곡류</item>
+        <item>정육/계란/수산</item>
+        <item>유제품</item>
+        <item>냉장/냉동</item>
+        <item>반찬</item>
+        <item>과자/음료/가공식품</item>
+    </string-array>
+
+    <string-array name = "category">
+        <item>과일/채소</item>
+        <item>곡류</item>
+        <item>정육/계란/수산</item>
+        <item>유제품</item>
+        <item>냉장/냉동</item>
+        <item>반찬</item>
+        <item>과자/음료/가공식품</item>
+    </string-array>
+</resources>

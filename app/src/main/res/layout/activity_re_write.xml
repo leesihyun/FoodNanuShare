@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="게시글 제목" />
+
+            <EditText
+                android:id="@+id/retitle_writing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카테고리선택"
+                android:layout_weight="0.5"/>
+
+            <Spinner
+                android:id = "@+id/reselect_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/repost_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="게시기한"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/repost_period_writing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/redate_pick_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜 선택"
+                android:layout_weight="0.5"
+                android:textColor="#ffffff"
+                android:theme = "@style/ButtonStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.74">
+
+        <Button
+            android:id = "@+id/reimage_pick_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사진수정"
+            android:layout_weight="0.5"
+            android:textColor="#ffffff"
+            android:theme = "@style/ButtonStyle"/>
+
+        <ImageView
+            android:id = "@+id/reuser_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:adjustViewBounds="true"
+            android:layout_weight="1.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/reitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="재료명"
+            android:layout_weight="0.5"/>
+
+        <EditText
+
+            android:id="@+id/reitem_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/recost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="희망가격"
+            android:layout_weight="0.5"/>
+
+        <EditText
+
+            android:id="@+id/recost_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/resell_by_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유통기한"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/resell_by_date_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/redate_pick_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜 선택"
+            android:layout_weight="0.5"
+            android:textColor="#ffffff"
+            android:theme = "@style/ButtonStyle"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trade_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="희망 나눔 지역" />
+
+            <LinearLayout
+                android:layout_width="106dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:text="시/도"></TextView>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:text="시/군/구"></TextView>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:text="읍/면/동"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/respinner"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.35"></Spinner>
+
+                <Spinner
+                    android:id="@+id/respinner2"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.35"></Spinner>
+
+                <Spinner
+                    android:id="@+id/respinner3"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.35"></Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/reinsert"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:drawableLeft="@drawable/cursor"
+            android:drawablePadding = "10dp"
+            android:paddingLeft="15dp"
+            android:text="수정"
+            android:theme = "@style/ButtonStyle"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+</ScrollView>
